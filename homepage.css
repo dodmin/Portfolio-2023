@@ -1,0 +1,85 @@
+nav {
+    height: 50px;
+    background-color: white;
+    display:block;
+    position:fixed;
+  }
+
+  #logo {
+    width: 200px;
+    height: 120.48px;
+    margin-left: 92px;
+    margin-top:80px;
+    float:left;
+  
+  }
+    h1 {
+      font-family: 'League Spartan';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 74px;
+    }
+    .main-nav{
+      display: inline-block;
+      margin-top:127px;
+      padding: 20px;
+      font-family:'Futura';
+      font-style:normal;
+      font-weight:500;
+      font-size:32px;
+      line-height:42px;
+      color:#4a4a4a
+    }
+.About{
+    margin-left: 872px;
+    
+}
+.Project{
+    margin-left: 1px;
+}
+  
+.ellipseHero {
+    clip-path: circle(200px);
+      position: absolute;
+    width: 2000px;
+    height: 409px;
+    left: -50px;
+    top: 246px;
+    background: url(pseudo\ me.png);
+    border: 9px solid blue;
+  }
+    .left{
+      background-color:#274782;
+    display: inline-block;
+      width: 720px;
+      height: 244px;
+      left: 0px;
+      margin-top: 447px;
+    }
+  .right{
+      background-color:#F3A774;
+      width: 720px;
+      height: 244px;
+      margin-left: 0px;
+      margin-top: 447px;
+      display: inline-block;
+    }
+    .hero-text1 {
+      color:#F3A774;
+      float: right;
+      width: 272px;
+      height: 74px;
+      left: 215px;
+      top: 538px;
+    }
+  
+    .hero-text2 {
+      color:#274782;
+      float: left;
+      width: 254px;
+      height: 74px;
+      left: 949px;
+      top: 538px;
+    }
+  

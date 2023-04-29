@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    width:auto;
+}
+
+
+#logo {
+    display: flex;
+    justify-content: left;
+    max-width: 30vmin;
+
+}
+
+.main-nav {
+    display: flex;
+    justify-content: right;
+}
+
+.main-nav p {
+    padding: 0 1rem;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5vmin;
+    color: #4a4a4a; 
+}
+
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 31.25vw;
+    margin-bottom: 10vmax;
+}
+
+.hero-photo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-end;
+    height: 75%;
+    margin: 0 -100px 32px;
+ 
+}
+
+.hero-photo p{
+    font-family: 'league spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8vmax;
+}
+
+.left-hero {
+    background-color: #274782;
+    width: 50%;
+    color: #F3A774;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    height: 60%;
+}
+
+div.left-hero p {
+    padding-right:15%;
+    margin:0 10%;
+}
+
+.right-hero {
+    background-color: #F3A774;
+    width: 50%;
+    color: #274782;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    height: 60%;
+}
+
+div.right-hero p {
+    padding-left:15%;
+    margin: 0 10%;
+}
+
+
+.mid {
+    left: 39%;
+    position:absolute;
+    width: 22%;
+    top:1%;
+}
+
+img {
+    width:100%;
+    height: auto;
+}
+
+.hero-text {
+    color: #4A4A4A;
+    text-align: center;
+    font-family: 'Futura';
+    font-style: normal;
+    height:25%;
+}
+
+.HRUI {
+    font-weight: 700;
+    font-size: 4vmin;
+}
+
+#hr {
+    color: #F3A774;
+}
+
+#UIUX {
+    color: #274782;
+}
+
+.hero-description {
+    font-size: 2.5vmin;
+    margin: 0% 10%;
+    padding: 12px;
+}
+
+body {
+    display: flex;
+    height: 60%;
+    display: block;
+    margin:0 100px;
+}
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.grid-item {
+    justify-content: center;
+    background-color: #FFDDBB;
+    padding: 40px 15px;
+    border-radius: 30px;
+    width: 608px;
+    height: 700px;
+    margin: 24px;
+}
+
+.grid-item p {
+    font-family: 'Futura';
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: #274782;
+}
+
+.carousel-photo1 {
+    width: 516px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+    margin: 0 auto;
+}
+
+.carousel-photo2 {
+    width: 152px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+    margin: 0 auto;
+}
+
+.task {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #274782;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #4A4A4A;
+    padding:0 12px;
+}
+
+.photo {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+    
+    .grid-item {
+      grid-column: 1;
+    }
+  }
+
+
+.more-project {
+    text-align: center;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #274782;
+    padding: 12px;
+    margin-bottom: 200px;
+}
+
+footer {
+    display: block;
+}
+
+.collaborate {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vmin;
+    line-height: 53px;
+    color: #274782;
+    text-align: center;
+    padding-bottom: 32px;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    column-gap: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}

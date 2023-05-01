@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@font-face {
-    font-family:'Futura';
-    src: url('assets/fonts/futura/futura.ttf') format('truetype'),
-        url('assets/fonts/futura/futura.woff') format('woff'),
-        url('assets/fonts/futura/futura.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 
 nav {
     display: flex;
@@ -35,7 +27,7 @@ nav {
 .main-nav p {
     padding: 0 1rem;
     font-family: 'Futura';
-    font-style: normal;
+    font-style: bold;
     font-weight: 500;
     font-size: 3.5vmin;
     color: #4a4a4a; 
@@ -48,6 +40,7 @@ nav {
     width: auto;
     height: 31.25vw;
     margin-bottom: 10vmax;
+    justify-content: center;
 }
 
 .hero-photo {

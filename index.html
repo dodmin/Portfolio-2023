@@ -8,6 +8,7 @@
     @font-face {
     font-family:Futura;
         src:url(assets/fonts/futura/Futura.ttc);
+        src:url(assets/fonts/futura/Futura\ Bold.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -16,15 +17,22 @@
 </head>
 <header>
     <nav>
-        <div>
-            <img src="images/DM logo.png" id="logo">
+        <div class="logo-wrapper">
+            <a href="index.html"><img src="images/DM logo.png" alt="Logo" id="logo"></a>
         </div>
         <div class="main-nav">
-            <p class="about" href="">ABOUT</p>
-            <p class="projects" href="">PROJECTS</p>
-            <p class="resume" href="">RESUME</p>
+            <p class="about"><a href="aboutme.html">ABOUT</a></p>
+            <p class="projects"><a href="project.html">PROJECTS</a></p>
+            <p class="resume"><a href=https://docs.google.com/document/d/1fltG3JExrfadYmwT5hGP2NOA9u6_MbUuPlEESI9bIZo/edit?usp=share_link>RESUME</p></a>
         </div>
-    </nav>
+
+        <div class="icon-nav">
+            <img src="images/hamburger.svg" alt="Navigation Icon" id="hamburger">
+        </div>
+ </nav>
+
+
+<!-- Start of hero section -->
     <section class="hero-wrapper">
         <div class="hero-photo">
             <div class="left-hero">
@@ -74,7 +82,7 @@
     <section class="socials">
         <a href="https://www.linkedin.com/in/dodettebminoza/"><img src="images/linkedIn Icon.svg" alt="Linkedin"></a>
         <a href="https://www.instagram.com/dodettebm/"><img src="images/ig icon.svg" alt="Instagram"></a>
-        <a><img src="images/mail Icon.svg" alt="Email" mailto:dodetteminoza@gmail.com></a>
+        <a href="mailto:dodetteminoza@yahoo.com"><img src="images/mail Icon.svg" alt="Email"></a>
     </section>
 </footer>
 

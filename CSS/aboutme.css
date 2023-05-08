@@ -8,7 +8,6 @@ nav {
     padding-bottom: 2%;
     margin-top: 80px;
     gap: 2rem;
-
 }
 
 .logo-wrapper {
@@ -36,6 +35,10 @@ nav {
     font-size: 3.5vmin;
     color: #4a4a4a;
 }
+
+.main-nav >p > a {
+    text-decoration: none;
+ }
 
 .icon-nav {
     display: none;

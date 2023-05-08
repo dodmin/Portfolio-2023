@@ -37,6 +37,10 @@ nav {
     color: #4a4a4a;
 }
 
+.main-nav >p > a {
+    text-decoration: none;
+ }
+
 .icon-nav {
     display: none;
 }

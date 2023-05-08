@@ -6,25 +6,30 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom: 2%;
     margin-top: 80px;
-    width:auto;
+    gap: 2rem;
 }
 
 
-#logo {
-    display: flex;
-    justify-content: left;
-    max-width: 30vmin;
+.logo-wrapper {
+    width: 200px;
+    min-width: 150px;
+    overflow: hidden;
+}
 
+#logo {
+    width: 150%;
+    min-width: 100%;
+    margin-left: -20px;
 }
 
 .main-nav {
     display: flex;
-    justify-content: right;
+    gap: 1rems;
 }
 
-.main-nav p {
+.main-nav > p {
     padding: 0 1rem;
     font-family: Futura;
     font-style: normal;
@@ -33,6 +38,13 @@ nav {
     color: #4a4a4a; 
 }
 
+.main-nav >p > a {
+   text-decoration: none;
+}
+
+.icon-nav {
+    display: none;
+}
 
 .hero-wrapper {
     display: flex;

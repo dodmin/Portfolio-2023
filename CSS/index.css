@@ -31,7 +31,7 @@ nav {
 
 .main-nav > p {
     padding: 0 1rem;
-    font-family: Futura;
+    font-family: 'Futura';
     font-style: normal;
     font-weight: 500;
     font-size: 3.5vmin;
@@ -118,7 +118,7 @@ img {
 .hero-text {
     color: #4A4A4A;
     text-align: center;
-    font-family: Futura;
+    font-family: 'Futura';
     font-style: normal;
     height:25%;
 }
@@ -167,7 +167,7 @@ body {
 }
 
 .grid-item p {
-    font-family: Futura;
+    font-family: 'Futura';
     text-align: center;
     margin-bottom: 12px;
 }

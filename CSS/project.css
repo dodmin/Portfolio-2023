@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    margin-top: 80px;
+    gap: 2rem;
+
+}
+
+.logo-wrapper {
+    width: 200px;
+    min-width: 150px;
+    overflow: hidden;
+}
+
+#logo {
+    width: 150%;
+    min-width: 100%;
+    margin-left: -20px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1rems;
+}
+
+.main-nav p {
+    padding: 0 1rem;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5vmin;
+    color: #4a4a4a;
+}
+
+.icon-nav {
+    display: none;
+}
+
+h2 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight:bold;
+    font-size: 3.75rem;
+    line-height: 5rem;
+    color: #274782;
+    transition: font-size 0..5s ease-in-out;
+}
+
+h5 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    transition: font-size 0..5s ease-in-out;
+
+}
+
+p {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #4A4A4A;
+}
+
+body {
+    margin: 0 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 30%;
+    margin-top: 5%;
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+/* Flexbox css here */
+.flexcontainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #FFDDBB;
+    border-radius: 20px;
+    height:30vw;
+}
+
+.photo-wrapper1 , .photo-wrapper2 {
+    width: 40%;
+    overflow: hidden;
+    padding:5%;
+}
+
+.photo-wrapper1 > img {
+    width:100%;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.photo-wrapper2 {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-wrapper2 > img {
+    width:30%;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.content {
+    width: 60%;
+    padding-right: 5%;
+
+}
+
+h2, h5, p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+#AustraliaPost {
+    background-color:#F9D181;
+}
+
+
+
+
+
+/* responsive font */
+@media screen and (max-width: 960px) {
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    h5, p {
+        line-height: 1.75rem;
+        font-size: 1.375rem;
+    }
+
+}
+
+/* styles for tablet */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: pink;
+        margin: 0 10vw;
+    }
+
+    .main-nav {
+        display: none;
+    }
+    
+    .icon-nav {
+        display: flex;
+        width: 40px;
+        overflow: hidden;
+    }
+
+    #hamburger {
+        width: 100%;
+    }
+
+    .logo-wrapper {
+        width: 225px;
+        overflow: hidden;
+    }
+
+    #logo {
+        width: 100%;
+        margin-left: -20px;
+    } 
+
+
+    h2 {
+        line-height: 2rem;
+        font-size: 1.75rem;
+
+    }
+
+    h5, p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+
+   
+}
+
+
+/* responsive font */
+@media screen and (max-width: 568px) {
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    h5, p {
+        line-height: 1.125rem;
+        font-size: .875rem;
+    }
+
+}
+
+/* styles for mobile */
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0 4vw;
+        background-color: aqua;
+    }
+
+    .logo-wrapper {
+        width: 200px;
+        overflow: hidden;
+    }
+
+    #logo {
+        margin-left: -45px;
+    } 
+
+
+    h2 {
+        font-weight: bold;
+        line-height: 1.75rem;
+        font-size: 1.25rem;
+    }
+
+    h5, p {
+        line-height: 1.125rem;
+        font-size: .875rem;
+    }
+
+    .flexcontainer {
+        height:40vw;
+    }
+
+    
+}

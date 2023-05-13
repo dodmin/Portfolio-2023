@@ -44,6 +44,25 @@ nav {
     display: none;
 }
 
+/* dropdown menu ------------ */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    transition: all 0.3s ease;
+    transform: translateY(-100%);
+}
+
+.dropdown-menu.active {
+    display:block;
+    transform: translateY(0);
+  }
+
+
+
 h3 {
     font-family: 'Futura';
     font-style: normal;
@@ -258,6 +277,33 @@ body {
         width: 100%;
     }
 
+    .dropdown-menu.active {
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+       z-index: 9999;
+        width: 100%;
+        background-color: white;
+        padding: 0;
+        transform: scaleY(1);
+      }
+    
+      
+      .dropdown-menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-family: futura;
+        color: #4a4a4a;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+        
+      }
+
+
+    
     .logo-wrapper {
         width: 225px;
         overflow: hidden;

@@ -87,23 +87,19 @@ p {
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
     left: 0;
-    background-color: pink;
-    padding: 10px;
-    z-index: 1; 
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    transition: all 0.3s ease;
+    transform: translateY(-100%);
+}
+
+.dropdown-menu.active {
+    display:block;
+    transform: translateY(0);
   }
 
-  .dropdown-menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-  }
-
-#hamburger.active + .dropdown-menu {
-    display: block;
-  }
 
 /* this is my hero -------------------*/
 
@@ -407,18 +403,30 @@ footer {
     }
 
 
-      .dropdown-menu {
-        display: block;
-        position: static;
-        background-color: transparent;
+      .dropdown-menu.active {
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+       z-index: 9999;
+        width: 100%;
+        background-color: white;
         padding: 0;
+        transform: scaleY(1);
       }
     
+      
       .dropdown-menu a {
-        display: inline-block;
-        padding: 0 10px;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-family: futura;
+        color: #4a4a4a;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+        
       }
-    
 
     .logo-wrapper {
         width: 220px;

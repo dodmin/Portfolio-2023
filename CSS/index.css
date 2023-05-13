@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
+/* This is navigation */
 nav {
     display: flex;
     flex-direction: row;
@@ -11,6 +11,42 @@ nav {
     gap: 2rem;
 }
 
+h1 {
+    font-family: 'league spartan';
+    font-style: normal;
+    font-weight:700;
+    font-size: 8rem;
+    line-height: 9rem;
+    transition: font-size 0..5s ease-in-out;
+}
+
+h2 {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 3.75rem;
+    line-height: 5rem;
+    color: #274782;
+    transition: font-size 0..5s ease-in-out;
+}
+
+h3 {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.25rem;
+    font-size: 2.5rem;
+    transition: font-size 0..5s ease-in-out;
+}
+
+p {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #4A4A4A;
+}
 
 .logo-wrapper {
     width: 200px;
@@ -46,12 +82,37 @@ nav {
     display: none;
 }
 
+
+/* dropdown menu ------------ */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: pink;
+    padding: 10px;
+    z-index: 1; 
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+
+#hamburger.active + .dropdown-menu {
+    display: block;
+  }
+
+/* this is my hero -------------------*/
+
 .hero-wrapper {
     display: flex;
     flex-direction: column;
     width: auto;
     height: 31.25vw;
-    margin-bottom: 10vmax;
+    margin-bottom: 10rem;
     justify-content: center;
 }
 
@@ -65,49 +126,44 @@ nav {
  
 }
 
-.hero-photo p{
-    font-family: 'league spartan';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 8vmax;
-}
 
 .left-hero {
     background-color: #274782;
     width: 50%;
-    color: #F3A774;
     display: flex;
     justify-content: right;
     align-items: flex-end;
-    height: 60%;
+    height: 75%;
 }
 
-div.left-hero p {
+div.left-hero h1 {
     padding-right:15%;
     margin:0 10%;
+    color: #F3A774;
 }
 
 .right-hero {
     background-color: #F3A774;
     width: 50%;
-    color: #274782;
     display: flex;
     justify-content: left;
     align-items: flex-end;
-    height: 60%;
+    height: 75%;
 }
 
-div.right-hero p {
+div.right-hero h1 {
     padding-left:15%;
     margin: 0 10%;
+    color: #274782;
 }
+
 
 
 .mid {
     left: 39%;
     position:absolute;
     width: 22%;
-    top:1%;
+    top:-3%;
 }
 
 img {
@@ -123,10 +179,6 @@ img {
     height:25%;
 }
 
-.HRUI {
-    font-weight: 700;
-    font-size: 4vmin;
-}
 
 #hr {
     color: #F3A774;
@@ -136,100 +188,90 @@ img {
     color: #274782;
 }
 
-.hero-description {
-    font-size: 2.5vmin;
+.HRUI p {
+    /* font-size: 2.5vmin; */
     margin: 0% 10%;
-    padding: 12px;
+    padding: 1rem;
 }
 
+
+
+/* this is my cards --------------------------- */
 body {
     display: flex;
     height: 60%;
     display: block;
     margin:0 100px;
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
 
 
-.grid-container{
+.grid-container {
     display:grid;
     grid-template-columns: auto auto;
     justify-content: center;
+    grid-column-gap: 0;
+    gap: 2rem;
 }
 
 .grid-item {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #FFDDBB;
-    padding: 40px 15px;
+    padding: 1.5rem 1rem;
     border-radius: 30px;
-    width: 608px;
-    height: 700px;
-    margin: 24px;
+    width: 34rem;
+    height: 40rem;
+    gap: 1rem;
 }
 
+.grid-item h2,
 .grid-item p {
-    font-family: 'Futura';
+    margin:0;
+    padding: 0;
     text-align: center;
-    margin-bottom: 12px;
-}
+} 
 
-.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    color: #274782;
-}
+
 
 .carousel-photo1 {
     width: 516px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
-    margin: 0 auto;
 }
 
 .carousel-photo2 {
     width: 152px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
-    margin: 0 auto;
 }
 
 .task {
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #274782;
 }
 
 .description {
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #4A4A4A;
     padding:0 12px;
 }
 
 .photo {
     display: flex;
+    justify-content: center;
 }
-
-@media screen and (max-width: 1000px) {
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-    
-    .grid-item {
-      grid-column: 1;
-    }
-  }
 
 
 .more-project {
     text-align: center;
-    font-family: 'Futura';
-    font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: #274782;
     padding: 12px;
     margin-bottom: 200px;
@@ -239,12 +281,10 @@ footer {
     display: block;
 }
 
-.collaborate {
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4vmin;
-    line-height: 53px;
+.footer-text h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
     color: #274782;
     text-align: center;
     padding-bottom: 32px;
@@ -257,7 +297,92 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: 10%;
+
 }
+
+
+
+/* responsive screen for 1024 ---------- */
+@media screen and (max-width: 1024px) {
+    .hero-wrapper {
+        margin-bottom: 8rem;
+    }
+    
+    h1 {
+        font-size: 5.6rem;
+        line-height: 6.3rem;
+    }
+    h2 {
+        font-size: 3.0rem;
+        line-height: 4rem;
+
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    h4 {
+        line-height: 1.75rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        line-height: 1.75rem;
+        font-size: 1.4rem;
+    }
+
+    .grid-container div {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .grid-container {
+        grid-column-gap: 0;
+    }
+    
+    .grid-item {
+      grid-column: 1;
+      justify-content: center;
+    }
+    
+    .grid-item h2 {
+    padding-top: 3rem;
+}
+
+    .grid-text {
+    height: fit-content;
+}
+
+    .carousel-photo1 {
+        width: 20rem;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+    
+    .carousel-photo2 {
+        width: 152px;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+        margin: 0 auto;
+    }
+
+    .footer-text h2 {
+        font-size: 2.0rem;
+        line-height: 2.6rem;
+    }
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -266,6 +391,7 @@ footer {
         margin: 0 10vw;
     }
 
+    
     .main-nav {
         display: none;
     }
@@ -280,21 +406,64 @@ footer {
         width: 100%;
     }
 
+
+      .dropdown-menu {
+        display: block;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+      }
+    
+      .dropdown-menu a {
+        display: inline-block;
+        padding: 0 10px;
+      }
+    
+
     .logo-wrapper {
-        width: 225px;
+        width: 220px;
         overflow: hidden;
     }
 
     #logo {
         width: 100%;
-        margin-left: -20px;
+        margin-left: -50px;
     } 
 
+    .hero-wrapper {
+    height: 20rem;
+    margin-bottom: 10rem;
+    }
 
+    .hero-photo{
+    margin: 0 -10vw;
+    }
+
+    .mid {
+        left: 37%;
+        position:absolute;
+        width: 24%;
+        top:2%;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+        line-height: 5rem;
+    }
+    h2 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+
+    }
     h3 {
         line-height: 2rem;
         font-size: 1.5rem;
 
+    }
+
+    p {
+        line-height: 1.8rem;
+        font-size: 1.2rem;
     }
 
     h4 {
@@ -302,7 +471,20 @@ footer {
         font-size: 1.25rem;
     }
 
+    .hero-text > p {
+        margin-top: -20px;
+    }
+  
+    .socials > a {
+        display: inline-flex;
+        justify-content: center;
+    }
 
+   a > img {
+        width: 50%;
+    }
+
+}
 
 
 /* styles for mobile */
@@ -320,16 +502,91 @@ footer {
         margin-left: -45px;
     } 
 
-
-    h3 {
-        font-weight: bold;
-        line-height: 1.5rem;
-        font-size: 1.125rem;
+    .hero-wrapper {
+        width: fit-content;
     }
 
-    h4 {
-        line-height: 1.313rem;
+    .hero-photo {
+        height: 100%;
+        margin: 0 -4vw;
+    }
+
+
+    .mid {
+        left: 34%;
+        position:absolute;
+        width: 32%;
+        top: 14%;
+    }
+
+    div.left-hero h1 {
+        padding-right:0%;
+
+    }
+    div.right-hero h1 {
+        padding-left:5%;
+
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+
+
+    h2 {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+
+    }
+    h3 {
+        line-height: 2rem;
+        font-size: 1.3rem;
+
+    }
+
+    .more-project {
+        line-height: 1.5rem;
+        font-size: 1.125rem;
+        margin-bottom: 80px;
+    }
+
+    .footer-text h2 {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+
+    p {
+        line-height: 1.8rem;
         font-size: 1rem;
     }
 
-}}
+    .grid-text > p {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-item {
+        border-radius: 30px;
+        width: 20rem;
+        height: 32rem;
+        gap: 1rem;
+    }
+
+
+    .carousel-photo1 {
+        width: 18rem;
+        margin-top: -1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .carousel-photo2 {
+        width: 8rem;
+
+    }
+
+
+}
+

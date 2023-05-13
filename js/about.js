@@ -5,4 +5,8 @@ $( document ).ready(function() {
         });
       });
 
+$(".icon-nav").on("click touchstart",'img', function() {
+    $(".dropdown-menu").toggleClass("active");
+  });
+
 });

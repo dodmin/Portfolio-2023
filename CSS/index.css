@@ -7,7 +7,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 2%;
-    margin-top: 80px;
+    margin-top: 60px;
     gap: 2rem;
 }
 
@@ -160,7 +160,13 @@ div.right-hero h1 {
     position:absolute;
     width: 22%;
     top:-3%;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
 }
+
+.mid:hover {
+    transform: scale(1.1);
+  }
 
 img {
     width:100%;
@@ -221,16 +227,57 @@ body {
     width: 34rem;
     height: 40rem;
     gap: 1rem;
+    position:relative;
+    overflow: hidden;
+    
 }
 
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color:#F3A774;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: width 1s ease, height 1s ease, opacity 1s ease;
+}
+  
+  .circle.expanded {
+    width: 200%;
+    height: 200%; 
+    opacity: 1;
+    border-radius: 50%;
+  } 
+
+
+
+.grid-item:hover {
+    background-color: #F9D181;
+    
+}
+
+
 .grid-item h2,
-.grid-item p {
+.grid-item  p {
     margin:0;
     padding: 0;
     text-align: center;
+    z-index: 1;
 } 
 
 
+.grid-item > a {
+    text-decoration: none;
+}
+
+
+.grid-text {
+    z-index: 1;
+}
 
 .carousel-photo1 {
     width: 516px;
@@ -295,6 +342,8 @@ footer {
     margin-bottom: 10%;
 
 }
+
+
 
 
 

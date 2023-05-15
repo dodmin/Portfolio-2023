@@ -1,102 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 2%;
-    margin-top: 60px;
-    gap: 2rem;
-
-}
-
-.logo-wrapper {
-    width: 200px;
-    min-width: 150px;
-    overflow: hidden;
-}
-
-#logo {
-    width: 150%;
-    min-width: 100%;
-    margin-left: -20px;
-}
-
-.main-nav {
-    display: flex;
-    gap: 1rems;
-}
-
-.main-nav p {
-    padding: 0 1rem;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3.5vmin;
-    color: #4a4a4a;
-}
-
-.main-nav >p > a {
-    text-decoration: none;
- }
-
-.icon-nav {
-    display: none;
-}
-
-
-/* dropdown menu------------ */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    padding: 0;
-    transition: all 0.3s ease;
-    transform: translateY(-100%);
-}
-
-.dropdown-menu.active {
-    display:block;
-    transform: translateY(0);
-  }
-
-
-
-
-
-
-h2 {
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight:bold;
-    font-size: 3.75rem;
-    line-height: 5rem;
-    color: #274782;
-    transition: font-size 0..5s ease-in-out;
-}
-
-h5 {
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    transition: font-size 0..5s ease-in-out;
-
-}
-
-p {
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    color: #4A4A4A;
-}
 
 body {
     margin: 0 100px;
@@ -111,7 +14,6 @@ body {
     margin-top: 5%;
 }
 
-
 .link {
     text-decoration: none;
 }
@@ -124,7 +26,17 @@ body {
     background: #FFDDBB;
     border-radius: 20px;
     height:30vw;
+    position:relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
+
+.flexcontainer:hover {
+    background: #F3A774;
+    transform: scale(1.03);
+
+}
+
 
 .photo-wrapper1 , .photo-wrapper2 {
     width: 40%;
@@ -164,139 +76,52 @@ h2, h5, p {
     background-color:#F9D181;
 }
 
-
-
-
-
-/* responsive font */
-@media screen and (max-width: 960px) {
-    h2 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-    }
-
-    h5, p {
-        line-height: 1.75rem;
-        font-size: 1.375rem;
-    }
-
+#AustraliaPost:hover {
+    background-color:#F3A774;
 }
 
-/* styles for tablet */
+
+
+/* This code indicates the responsive screen for 768px */
 @media screen and (max-width: 768px) {
     body {
         margin: 0 10vw;
     }
 
-    .main-nav {
-        display: none;
-    }
-    
-    .icon-nav {
-        display: flex;
-        width: 40px;
-        overflow: hidden;
-    }
-
-    #hamburger {
-        width: 100%;
-    }
-
-    .dropdown-menu.active {
-        display: inline-flex;
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-       z-index: 9999;
-        width: 100%;
-        background-color: white;
-        padding: 0;
-        transform: scaleY(1);
-      }
-    
-      
-      .dropdown-menu a {
-        display: block;
-        padding: 10px;
-        text-align: center;
-        font-family: futura;
-        color: #4a4a4a;
-        text-decoration: none;
-        font-size: 1.2rem;
-        transition: transform 0.3s ease;
-        
-      }
-
-
-
-
-
-    .logo-wrapper {
-        width: 225px;
-        overflow: hidden;
-    }
-
-    #logo {
-        width: 100%;
-        margin-left: -20px;
-    } 
-
-
     h2 {
-        line-height: 2rem;
-        font-size: 1.75rem;
-
+        line-height: 2rem !important;
+        font-size: 1.75rem !important;
     }
 
     h5, p {
-        line-height: 1.5rem;
-        font-size: 1rem;
+        line-height: 1.5rem !important;
+        font-size: 1rem !important;
     }
 
 
-   
 }
 
 
-/* responsive font */
-@media screen and (max-width: 568px) {
-    h2 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
 
-    h5, p {
-        line-height: 1.125rem;
-        font-size: .875rem;
-    }
 
-}
 
-/* styles for mobile */
+
+
+/* This code indicates the responsive screen for 480px */
 @media screen and (max-width: 480px) {
     body {
         margin: 0 4vw;
     }
 
-    .logo-wrapper {
-        width: 200px;
-        overflow: hidden;
-    }
-
-    #logo {
-        margin-left: -45px;
-    } 
-
-
     h2 {
-        font-weight: bold;
-        line-height: 1.75rem;
-        font-size: 1.25rem;
+        font-weight: bold !important;
+        line-height: 1.75rem !important;
+        font-size: 1.25rem !important;
     }
 
     h5, p {
-        line-height: 1.125rem;
-        font-size: .875rem;
+        line-height: 1.125rem !important;
+        font-size: .875rem !important;
     }
 
     .flexcontainer {

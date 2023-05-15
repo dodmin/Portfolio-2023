@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font style and text */
+
+h1 {
+    font-family: 'league spartan';
+    font-style: normal;
+    font-weight:700;
+    font-size: 8rem;
+    line-height: 9rem;
+    transition: font-size 0..5s ease-in-out;
+}
+
+h2 {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 3.75rem;
+    line-height: 5rem;
+    color: #274782;
+    transition: font-size 0..5s ease-in-out;
+}
+
+h3 {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.25rem;
+    font-size: 2.5rem;
+    color: #4A4A4A;
+    transition: font-size 0..5s ease-in-out;
+}
+
+h4 {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    font-size: 1.875rem;
+    color: #4A4A4A;
+    transition: font-size 0..5s ease-in-out;
+}
+
+h5 {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    transition: font-size 0..5s ease-in-out;
+}
+
+
+p {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #4A4A4A;
+}
+
+
+
+
+/* Navigation of the page */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    margin-top: 60px;
+    gap: 2rem;
+}
+
+.logo-wrapper {
+    width: 200px;
+    min-width: 150px;
+    overflow: hidden;
+}
+
+#logo {
+    width: 150%;
+    min-width: 100%;
+    margin-left: -20px;
+}
+
+.main-nav {
+    display: flex;
+}
+
+
+  .main-nav a {
+    position: relative;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5vmin;
+    color: #4a4a4a; 
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .main-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #274782;
+    transition: height .5s ease-in-out;
+    z-index: -1;
+    border-radius: .8rem;
+  }
+  
+  .main-nav a:hover::before,
+  .main-nav a:focus::before  {
+    height: 100%;
+  }
+
+  .main-nav a:hover,
+  .main-nav a:focus {
+    color: #F3A774;
+  }
+
+
+/* .icon-nav {
+    display: none;
+} */
+
+
+.menu-icon {
+    display:none;
+}
+
+
+/* dropdown menu ------------ */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    transition: all 0.3s ease;
+    transform: translateY(-100%);
+}
+
+.dropdown-menu.active {
+    display:block;
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+/* This code indicates the responsive screen for 1024px */
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 5.6rem;
+        line-height: 6.3rem;
+    }
+    h2 {
+        font-size: 3.0rem;
+        line-height: 4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    h4 {
+        line-height: 1.75rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        line-height: 1.75rem;
+        font-size: 1.4rem;
+    }
+
+
+/* Navigation part */
+    nav {
+        margin-top: 24px;
+    }
+
+      .main-nav a {
+        margin: 0 .5rem;
+        padding: 0 .3rem;
+        font-size: 1.5rem;
+      }
+
+}
+
+
+
+
+/* This code indicates the responsive screen for 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation bar */
+
+    .main-nav {
+        display: none;
+    }
+
+
+      .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+      }
+      
+      .line {
+        width: 100%;
+        height: 4px;
+        background-color: #274782;
+        transition: transform 0.3s ease;
+      }
+      
+      .menu-open .line:nth-child(1)  {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .menu-open .line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .menu-open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(13px, -13px);
+      }
+
+
+    .logo-wrapper {
+        width: 220px;
+        overflow: hidden;
+    }
+
+    #logo {
+        width: 100%;
+        margin-left: -50px;
+    } 
+
+
+/* Dropdown menu */
+
+    .dropdown-menu.active {
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        background-color: white;
+        padding: 0;
+        transform: scaleY(1);
+        box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+      
+    .dropdown-menu a {
+        display: block;
+        padding: 12px;
+        text-align: center;
+        font-family: futura;
+        color: #4a4a4a;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+        
+    }
+
+ 
+
+
+    /* Font style */
+
+    h1 {
+        font-size: 4.2rem;
+        line-height: 5rem;
+    }
+    h2 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+
+    }
+    h3 {
+        line-height: 2rem;
+        font-size: 1.5rem;
+
+    }
+
+    p {
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+
+
+}
+
+
+
+
+/* This code indicates the responsive screen for 480px */
+@media screen and (max-width: 480px) {
+
+/* Navigation bar */
+    .logo-wrapper {
+        width: 200px;
+        overflow: hidden;
+    }
+
+    #logo {
+        margin-left: -45px;
+    } 
+
+
+
+    /* Font styles */
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+
+    }
+    h3 {
+        line-height: 2rem;
+        font-size: 1.3rem;
+
+    }
+
+    h4 {
+        line-height: 1.313rem;
+        font-size: 1rem;
+    }
+
+    p {
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+}

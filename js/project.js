@@ -1,8 +1,12 @@
-$( document ).ready(function() {
-    $(document).ready(function() {
-        $(".icon-nav").on("click", 'img', function() {
-          $(".dropdown-menu").toggleClass("active");
-        });
-      });
+// Dropdown - hamburger menu
+function toggleMenu() {
+  const menuIcon = document.querySelector('.menu-icon');
+  menuIcon.classList.toggle('menu-open');
+  $(".dropdown-menu").toggleClass("active");
+}
 
-});
+const menuIcon = document.querySelector('.menu-icon');
+menuIcon.addEventListener('touchstart', toggleMenu);
+
+
+

@@ -7,3 +7,6 @@ function toggleMenu() {
 
 const menuIcon = document.querySelector('.menu-icon');
 menuIcon.addEventListener('touchstart', toggleMenu);
+
+
+

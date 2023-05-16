@@ -305,6 +305,12 @@ footer {
       grid-column: 1;
       justify-content: center;
     }
+
+
+    .grid-item:hover {
+        background-color: initial;
+        
+    }
     
     .grid-item h2 {
     padding-top: 3rem;

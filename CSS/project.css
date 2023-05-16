@@ -82,6 +82,19 @@ h2, h5, p {
 
 
 
+/* This code indicates the responsive screen for 1024px */
+@media screen and (max-width: 1024px) {
+
+    #AustraliaPost:hover {
+        background-color:#F9D181;
+    }
+
+    .flexcontainer:hover {
+        background-color: #FFDDBB;
+    }
+
+}
+
 /* This code indicates the responsive screen for 768px */
 @media screen and (max-width: 768px) {
     body {

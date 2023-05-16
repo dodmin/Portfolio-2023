@@ -129,6 +129,13 @@ nav {
   }
 
 
+  .main-nav a.nav-link.active {
+  color: #F3A774;
+  background-color: #274782;
+  border-radius: .8rem;
+}
+
+
 /* .icon-nav {
     display: none;
 } */
@@ -188,17 +195,35 @@ nav {
         font-size: 1.4rem;
     }
 
+    
+
 
 /* Navigation part */
     nav {
         margin-top: 24px;
+
     }
 
+
+    .main-nav{
+        justify-content: end;
+    }
       .main-nav a {
         margin: 0 .5rem;
         padding: 0 .3rem;
         font-size: 1.5rem;
+
       }
+
+
+
+#logo {
+    width: 150%;
+    min-width: 100%;
+    margin-left: -80px;
+}
+
+
 
 }
 

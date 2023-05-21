@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.bodyDM {
+    margin: 0 100px;
+}
+
+
+.jumbotron-fluid {
+    background-color: #FFDDBB ;
+    margin: 0 -100px;
+    text-align: center;
+    height: 750px;
+    margin-bottom: 5rem;
+}
+.jumbo-AP {
+    background-color: #F9D181;
+    margin: 0 -100px;
+    text-align: center;
+    height: 750px;
+    margin-bottom: 5rem;
+};
+
+
+.jumbotron .titleDM {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 3.75rem !important;
+    line-height: 5rem !important;
+    color: #274782;
+    transition: font-size 0..5s ease-in-out;
+}
+
+.titleDM {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 3.75rem !important;
+    line-height: 5rem !important;
+    color: #274782;
+    padding-top: 2rem;
+}
+
+.hero-photo img {
+    width: 65%;
+    min-width: 480px;
+    padding: 2rem;
+} 
+
+.hero-photoMobile img {
+    width: 24%;
+    min-width: 200px;
+    padding: 2rem;
+} 
+
+.breadcrumbDM {
+    justify-content: center;
+    background-color: transparent;
+    padding: 0 2rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: none;
+}
+
+.bc-itemDM > a {
+    padding: 0 2rem;
+    text-decoration: none;
+    font-family: 'Futura';
+    font-style: normal;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #274782;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden;
+}
+
+.bc-itemDM a::before {
+    content: ''!important;
+    position: absolute!important;
+    bottom: 0!important;
+    left: 0!important;
+    width: 100%!important;
+    height: 0!important;
+    background-color: #274782!important;
+    transition: height .5s ease-in-out!important;
+    z-index: -1!important;
+    border-radius: .8rem!important;
+}
+
+.bc-itemDM > a:hover {
+    height: 100% !important;
+}
+
+    
+.bc-itemDM > a:hover {
+    color: #F3A774;
+    }
+
+/* end of hero page ---
+--- start of overview grid page */
+
+
+.grid-overview {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    'name name'
+    'summary roles'
+    'summary tools'
+    'timeline timeline';
+    grid-gap: 5%;
+}
+
+.grid-name {
+    grid-area: name;
+}
+
+
+.grid-summary {
+    grid-area: summary;
+    background-color:#FFDDBB;
+    padding: 5%;
+    border-radius: 20px;
+}
+.grid-summary p {
+    line-height: 2rem ;
+    font-size: 1.25rem;
+    text-align: justify;
+    color:#4A4A4A;
+}
+
+.grid-roles > ul, 
+.grid-tools > ul {
+    line-height: 2rem ;
+    font-size: 1.25rem;
+    text-align: justify;
+    color:#4A4A4A;
+    font-family: futura;
+}
+.grid-roles {
+    grid-area: roles;
+}
+
+.grid-name > h2 {
+    text-align: left;
+}
+
+
+.grid-tools {
+    grid-area: tools;
+}
+
+.grid-timeline {
+    grid-area: timeline;
+    margin-bottom: 15%;
+}
+
+.timeline-photo > img {
+    width: 85%;
+}
+
+
+
+/* end of overview page----
+----start of user research page */
+
+ .grid-process {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-areas:
+    'left right';
+    margin: 0 0 0 -100px;
+}
+
+
+.process-left {
+    grid-area: left;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 100
+}
+
+.grid-title > h2 {
+    text-overflow: inherit;
+    text-align: center;
+    padding-top: 4rem;
+    width: 100%;
+}
+
+.grid-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.link-wrapper > p {
+    text-overflow: inherit;
+    text-align: right;
+    padding-right: 2rem;
+    align-items: stretch;
+    font-size: 2rem;
+    line-height: 2.8rem; 
+}
+
+.link-wrapper  a {
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    padding: 0 .5rem;
+}
+
+.link-research a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #274782;
+    transition: height .5s ease-in-out;
+    z-index: -1;
+    border-radius: .8rem;
+  }
+
+
+.link-wrapper a:hover::before,
+.link-wrapper a:focus::before  {
+    height: 100%;
+}
+
+.link-research a:hover,
+.link-research a:focus {
+    color: #F9D181;
+}
+
+
+.link-research a.active {
+    color: #F9D181;
+    background-color: #274782;
+    border-radius: 0.8rem;
+  }
+
+
+.link-research a {
+    color:#274782;
+}
+
+.link-wrapper {
+   width: 100%;
+   padding-bottom: 2rem;
+}
+
+
+  
+
+
+
+
+#user-research {
+    background-color: #F9D181;
+}
+
+.process-right {
+    grid-area: right;
+    padding:1.5rem;;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.content > h4 {
+    font-weight: 600;
+    color:#274782
+ 
+
+}
+.content > p,
+.content > ul {
+    line-height: 2rem ;
+    font-size: 1.25rem;
+    text-align: justify;
+    color:#4A4A4A;
+    font-family: futura;
+}
+
+.video-container, .user-persona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+video {
+    width: 50rem;
+}
+
+.canva-photo > img {
+    width: 100%;
+}
+
+
+
+
+
+/* IDEATION */
+
+#ideation{
+    background-color: #274782;
+}
+
+.ideation > h2 {
+    color:#F3A774 ;
+}
+
+.link-ideation a {
+    color: #F3A774;
+}
+
+.link-ideation a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #F3A774;
+    transition: height .5s ease-in-out;
+    z-index: -1;
+    border-radius: .8rem;
+  }
+
+
+.link-ideation a:hover,
+.link-ideation a:focus {
+    color: #274782;
+}
+
+.link-ideation a.active {
+    color: #274782;
+    background-color: #F3A774;
+    border-radius: 0.8rem;
+}
+
+
+.quote-inline {
+    display: inline;
+    vertical-align: top;
+    padding: 0 .2rem;
+}
+
+.leftside > ul, 
+.rightside > ul,
+.leftside > p, 
+.rightside > p 
+{
+    line-height: 2rem ;
+    font-size: 1.15rem;
+    text-align: left;
+    color:#4A4A4A;
+    font-family: futura;
+    color:#274782;
+}
+
+.comparison-table {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    'leftside rightside';
+    grid-gap: 1rem;
+    
+}
+
+.rightside {
+    grid-area: rightside;
+    background-color: #FFDDBB; 
+    padding: 1.25rem;
+    border-radius: .8rem;
+}
+
+.leftside {
+    grid-area: leftside;
+    background-color:  #FFDDBB; 
+    padding: 1.25rem;
+    border-radius: .8rem;
+}
+.content ol {
+    line-height: 2rem ;
+    font-size: 1.25rem;
+    text-align: justify;
+    color:#4A4A4A;
+    font-family: futura;
+}
+
+
+
+
+
+/* PROTOTYPING */
+
+#prototyping{
+    background-color: #F3A774;
+}
+
+
+.prototype > h2 {
+    color:#274782 ;
+}
+
+.link-prototype a {
+    color: #274782;
+}
+
+.link-prototype a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #274782;
+    transition: height .5s ease-in-out;
+    z-index: -1;
+    border-radius: .8rem;
+  }
+
+
+.link-prototype a:hover,
+.link-prototype a:focus {
+    color: #F3A774;
+}
+
+.link-prototype a.active {
+    color: #F3A774;
+    background-color: #274782;
+    border-radius: 0.8rem;
+}
+
+.two-photos {
+    display: flex;
+}
+
+.AB-test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AB-test img {
+    width: 50%
+}
+
+
+
+
+/* USER TESTING*/
+
+#testing{
+    background-color: #FFDDBB;
+}
+
+
+.user-test > h2 {
+    color:#F3A774 ;
+}
+
+.link-testing a {
+    color: #F3A774;
+}
+
+.link-testing a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #F3A774;
+    transition: height .5s ease-in-out;
+    z-index: -1;
+    border-radius: .8rem;
+  }
+
+
+.link-testing a:hover,
+.link-testing a:focus {
+    color: #FFDDBB;
+}
+
+.link-testing a.active {
+    color: #FFDDBB;
+    background-color: #F3A774;
+    border-radius: 0.8rem;
+}
+
+/* CONCLUSION */
+
+#conclusion{
+    background-color: #274782;
+}
+
+
+.conclusion > h2 {
+    color:#FFDDBB;
+}
+
+.link-conclusion a {
+    color: #FFDDBB;
+}
+
+.link-conclusion a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #FFDDBB;
+    transition: height .5s ease-in-out;
+    z-index: -1;
+    border-radius: .8rem;
+  }
+
+
+.link-conclusion a:hover,
+.link-conclusion a:focus {
+    color: #274782;;
+}
+
+.link-conclusion a.active {
+    color: #274782;
+    background-color: #FFDDBB;
+    border-radius: 0.8rem;
+}
+.lastcontent {
+    margin-bottom: 10rem;
+}
+
+
+
+
+
+/* This code indicates the responsive screen for 1024px */
+@media screen and (max-width: 1024px) {
+
+.main-nav{
+    justify-content: end;
+    padding-top: 1.25rem;
+}
+
+
+
+
+/* USER RESEARCH */
+
+.video-container, .user-persona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 35rem;
+}
+
+}
+
+
+/* This code indicates the responsive screen for 768px */
+
+@media screen and (max-width: 768px) {
+
+    .jumbotron-fluid {
+        height: 620px;
+        margin-top: 100px
+    }
+
+    .jumbo-AP {
+        height: 620px;
+        margin-top: 100px
+    }
+
+.grid-overview {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    'name name'
+    'summary summary'
+    'roles tools'
+    'timeline timeline';
+    justify-content: center;
+}
+
+.grid-summary {
+    grid-area: summary;
+}
+
+.grid-name >  h2 {
+    text-align: left;
+
+}
+
+.grid-timeline {
+    grid-area: timeline;
+    margin-bottom: 50%;
+}
+
+.timeline-photo > img {
+    width: 100%;
+}
+
+
+
+/* Design process part */
+
+
+.grid-process {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'left'
+    'right'; 
+    justify-content: center;
+    margin: 0;
+  }
+
+
+ .process-left {
+    grid-area: left;
+    height: 8.5rem;
+    margin: 0 -100px;
+    top: 130px;
+ }
+
+
+.grid-title > h2 {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 100%;
+    text-align: left;
+}
+
+
+.grid-title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+
+
+.link-wrapper > p {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0 2rem;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+.process-right {
+    grid-area:right;
+    padding: 2rem 0 0 0;
+}
+
+.lastcontent {
+    margin-bottom: 30rem;
+}
+
+
+ }
+
+
+
+
+ /* This code indicates the responsive screen for 480px */
+@media screen and (max-width: 480px) {
+
+    
+.bodyDM > section {
+    margin: 0 -84px 0 -84px;
+}
+
+    .jumbotron-fluid {
+        height: 450px;
+        margin-top: 80px
+    }
+
+    .jumbo-AP {
+        height: 450px;
+        margin-top: 80px
+    }
+
+    .jumbotron .titleDM {
+        font-size: 3rem !important;
+        line-height: 4rem !important;
+    }
+    
+    .hero-photo img {
+        width: 20%;
+        min-width: 145px;
+        padding: 1rem;
+    } 
+
+    .bc-itemDM > a {
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .grid-overview {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'name'
+        'summary'
+        'roles' 
+        'tools'
+        'timeline';
+        gap: 1rem;
+        margin:0 4vw;
+    }
+
+    .grid-summary > p {
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    .grid-roles > ul, 
+    .grid-tools > ul {
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    .grid-roles > h4, 
+    .grid-tools > h4,
+    .grid-timeline > h4 {
+        font-size:1.25rem;
+        line-height: 2rem;
+    }
+
+    .grid-timeline {
+        grid-area: timeline;
+        margin-bottom: 10%;
+    }
+
+
+/* Design process part */
+
+ .process-left {
+    grid-area: left;
+    height: 6.5rem;
+    margin: 0 -1rem;
+    top: 120px;
+    width:100vw;
+ }
+
+ .link-wrapper > p {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0 1rem 0 0;
+    line-height: 1.2rem;
+    font-size: .875rem;
+ }
+
+ .link-wrapper {
+    margin-left: 1rem;
+    width: fit-content;
+ }
+
+ .grid-title {
+    row-gap:0;
+    width:100vw;
+
+}
+
+.grid-title > h2 {
+    padding-left: 1rem;
+}
+
+    video {
+        width: 25rem;
+    }
+
+
+
+
+    .content > p,
+.content > ul, 
+.content > ol {
+    line-height: 2rem ;
+    font-size: 1rem;
+    text-align: justify;
+    color:#4A4A4A;
+    font-family: futura;
+}
+
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="CSS/general.css" rel="stylesheet">
+    <link href="CSS/casestudy.css" rel="stylesheet">
+
+
+    <title>Dodette</title>
+     <style>
+    @font-face {
+    font-family:'Futura';
+        src:url(fonts/Futura.ttc);
+    }
+
+    @font-face {
+    font-family:'Futura';
+    src:url(fonts/Futura\ Bold.otf);
+    font-weight: bold;
+    font-style: normal; }
+     </style>
+</head>
+<body class="bodyDM"></body>
+<header>
+    <nav class="navDM">
+        <div class="logo-wrapper">
+            <a href="index.html"><img src="images/DM logo.png" alt="Logo" id="logo"></a>
+        </div>
+        <div class="main-nav">
+            <p class="about nav-linkDM"><a href="aboutme.html">ABOUT</a></p>
+            <p class="projects nav-linkDM"><a href="project.html">PROJECTS</a></p>
+            <p class="resume nav-linkDM"><a href=https://docs.google.com/document/d/1fltG3JExrfadYmwT5hGP2NOA9u6_MbUuPlEESI9bIZo/edit?usp=share_link>RESUME</a></p>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+
+ </nav>
+
+ <div class="dropdown-menuDM">
+    <a href="aboutme.html">ABOUT</a>
+    <a href="project.html">PROJECT</a>
+    <a href="#">RESUME</a>
+  </div>
+
+
+</header>
+
+
+<!--start of hero page -->
+    <div class="jumbotron jumbotron-fluid jumbo-AP">
+        <div class="container">
+          <h2 class="display-4 titleDM">Australia Post</h2>
+          <div class="hero-photo hero-photoMobile">
+            <img src="images/AusPost Icon.png" alt="Australia Post Photo">
+        </div>
+            <ul class="breadcrumb breadcrumbDM">
+              <li class="breadcrumb-item bc-itemDM"><a href="#overview">OVERVIEW</a></li>
+              <li class="breadcrumb-item bc-itemDM"><a href="#user-research">DESIGN PROCESS</a></li>
+            </ul>
+        </div>
+      </div>
+
+
+
+<!--end of hero page -->
+
+<!-- start of Overview page -->
+    <section class="grid-overview">
+        <div class="grid-name" id="overview">
+            <h2>Overview</h2>
+        </div>
+        <div class="grid-summary">
+            <p>The objective of this project was to redesign an Australian government website and I chose Australia Post. The redesign was completed in four weeks, and the project involved several stages, including user research, heuristic evaluation, prototyping, usability testing, and card sorting.The focus of the Australia Post website redesign was to enhance the parcel sending experience for users starting from the homepage. In achieving this goal, a crucial aspect that significantly contributed to a better user experience was information architecture. Let me walk you through the process on how information architecture played a vital role in the redesign. </p>
+            <p>Upon completing the project, I successfully delivered a high-fidelity prototype that showcases the new look and feel of the Australia Post website. The prototype features a user-friendly and responsive interface that ensures optimal accessibility for all users.</p>
+        </div>
+        <div class="grid-roles">
+            <h4>Roles & Responsibilities</h4>
+            <ul>
+                <li>User Researcher</li>
+                <li>UI Designer</li>
+            </ul>
+        </div>
+        <div class="grid-tools">
+            <h4>Tools</h4>
+            <ul>
+                <li>Miro</li>
+                <li>Figma</li>
+                <li>Canva</li>
+                <li>G-suite</li>
+                <li>Zoom & Slack</li>
+            </ul>
+            </div>
+        <div class="grid-timeline">
+                <h4>Timeline</h4>
+                <div class="timeline-photo"><img src="images/cs/Aus Timeline.png">
+                </div>
+        </div>
+    </section>
+
+  <!-- start of user research page -->
+    <section class="grid-process">
+        <div class="process-left" id="user-research">
+            <div class="grid-title">
+            <h2>User Research</h2>
+            <div class="link-wrapper link-research">
+            <p><a href="#user-research">User Research</a></p>
+            <p><a href="#ideation">Ideation</a></p>
+            <p><a href="#prototyping">Prototyping</a></p>
+            <p><a href="#testing">User Testing</a></p>
+            <p><a href="#conclusion">Conclusion</a></p>
+            </div></div>
+        </div>
+        <div class="process-right" id="research-content">
+            <div class="content">
+                <h4>Background</h4>
+            <p>Australia Post is the national postal service provider in Australia. It operates as a government-owned corporation, offering essential mail and parcel delivery services to individuals and businesses. Everyone in Australia knows Australia Post- its distinct brand colour and their iconic logo. </p>
+            
+        </div>
+            <div class="content">
+                <h4>Understanding the Problem</h4>
+                <p>I started  by developing the Proto-Persona to be able to identify specific tasks to focus on for the website redesign. In my case, I chose to prioritise the common task of "Sending an Item,". </p>
+                <p>To be able to identify the problem I wanted to test the user experience of  sending an item using the Australia Post website. The task was for the user to send an item with the success criteria of reaching the payment details page (see the Wireflow here). I invited two of my classmates to complete the usability testing. </p>
+                <p>The result below shows that one user partially completed the task but both were equally frustrated on how difficult it is to send an item using the Australia Post. A recorded video of the test sessions for <a href="">User 1</a> and <a href="">User 2</a> has been linked for reference.</p>
+                <div class="canva-photo user-persona"><img src="images/cs/Aus usability result.png"></div>
+            </div>
+                <p>From the testing, five common themes emerged: <b>Homepage, Navigation, Login page, Order Dashboard, and Sending Form.</b> Using the prioritisation matrix, I plotted the things identified that would be considered important for the user and the client. Below shows that a focus on navigation is required. 
+                </p>
+                <ul>
+                    <li>Homepage navigation is confusing</li>
+                    <li>Misleading navigation labels</li>
+                    <li>Dashboard navigation is unclear</li>
+                </ul>
+                <div class="canva-photo user-persona"><img src="images/cs/Aus prio matrix.png"></div>
+            </div>
+            </div>
+        </div>
+    </section>
+  <!-- end of user research page -->
+
+  <!-- start of user ideation page -->
+  <section class="grid-process">
+    <div class="process-left" id="ideation">
+        <div class="grid-title ideation">
+        <h2>Ideation</h2>
+        <div class="link-wrapper link-ideation">
+            <p><a href="#user-research">User Research</a></p>
+            <p><a href="#ideation">Ideation</a></p>
+            <p><a href="#prototyping">Prototyping</a></p>
+            <p><a href="#testing">User Testing</a></p>
+            <p><a href="#conclusion">Conclusion</a></p>
+        </div></div>
+    </div>
+    <div class="process-right">
+        <div class="content">
+            <h4>Problem statement:</h4>
+            <p><img src="images/cs/quote.svg" class="quote-inline">How might we address the challenges of confusing homepage navigation, misleading navigation labels, and the lack of focus on key services in the Australia Post website redesign, specifically targeting the improvement of the homepage, footer, and navigation?<img src="images/cs/quote.svg" class="quote-inline"></p>
+        </div>
+        <div class="content">
+            <h4>Usability & Heuristic Insight</h4>
+            <p>As a designer, I conducted a comprehensive analysis of the Australia Post website, delving into its heuristic principles, usability factors, and accessibility considerations.
+            </p>
+            <div class="canva-photo comp-analysis"><img src="images/cs/Aus homepage heu.png"></div><br>
+            <div class="canva-photo comp-analysis"><img src="images/cs/Aus nav.png"></div><br>
+            <p>I also used card sorting techniques to organise the information on the Australia Post website. Through this, I was able to gather valuable insights from users and translate those findings into a coherent sitemap.
+            </p>
+            <div class="canva-photo comp-analysis"><img src="images/cs/aus card sorting.png"></div><br>
+            <div class="canva-photo comp-analysis"><img src="images/cs/aus sitemap.png"></div><br>
+        </div>
+    </div>
+</section>
+<!-- end of user research page -->
+
+
+
+<!-- start of user prototyping page -->
+<section class="grid-process">
+    <div class="process-left" id="prototyping">
+        <div class="grid-title prototype">
+        <h2>Prototyping</h2>
+        <div class="link-wrapper link-prototype">
+            <p><a href="#user-research">User Research</a></p>
+            <p><a href="#ideation">Ideation</a></p>
+            <p><a href="#prototyping">Prototyping</a></p>
+            <p><a href="#testing">User Testing</a></p>
+            <p><a href="#conclusion">Conclusion</a></p>
+        </div></div>
+    </div>
+    <div class="process-right">
+        <div class="content">
+            <h4>Moodboard</h4>
+            <p>To kickstart the design process, I began by creating a moodboard specifically tailored for this project. You can view the full moodboard <a href="https://www.figma.com/proto/7BfrpHuRSXpnxb47BP3chH/UI-Design-System?type=design&node-id=523-11512&scaling=min-zoom&page-id=523%3A11363&starting-point-node-id=523%3A11512">here.</a>
+            </p>
+            <div class="canva-photo user-flow"><img src="images/cs/Aus moodboard.png"></div>
+        </div>
+        <div class="content">
+            <h4>Wireframing</h4>
+            <p>I proceeded to create wireframes for both the desktop and mobile versions of the Australia Post website.</p>
+            <div class="video-container">
+                <video src="videos/aus desktop wireframe.mov" controls></video></div>
+            <div class="video-container">
+                <video src="videos/aus mobile wireframe.mov" controls></video></div>
+        </div>
+
+</section>
+<!-- end of user prototyping page -->
+
+
+<!-- start of user user testing page -->
+<section class="grid-process">
+    <div class="process-left" id="testing">
+        <div class="grid-title user-test">
+        <h2>User Testing</h2>
+        <div class="link-wrapper link-testing">
+            <p><a href="#user-research">User Research</a></p>
+            <p><a href="#ideation">Ideation</a></p>
+            <p><a href="#prototyping">Prototyping</a></p>
+            <p><a href="#testing">User Testing</a></p>
+            <p><a href="#conclusion">Conclusion</a></p>
+        </div></div>
+    </div>
+    <div class="process-right">
+        <div class="content">
+            <h4>User Testing</h4>
+            <p>I enlisted the help of three classmates to conduct usability testing for the initial wireframe design. The results of the testing revealed valuable insights and feedback that contributed to the iterative improvement of the wireframe.
+            </p>
+            <div class="canva-photo user-flow"><img src="images/cs/aus Feedback.png"></div>
+            </div>
+            <p>After refining the wireframe based on the feedback, I proceeded to develop a high fidelity prototype. To ensure thorough testing, I engaged five users in the usability testing process. The primary task assigned to them was to send an item within Australia using the website or mobile app. Throughout the testing, special emphasis was placed on evaluating the navigation and footer components, allowing for a comprehensive assessment of their functionality and usability.
+            </p>
+
+
+       <br>
+        <div class="content">
+            <h4>Photos & Documentation</h4>
+            <div class="canva-photo user-flow"><img src="images/cs/aus photo doc.png"></div>
+        </div>
+
+        <div class="content">
+            <h4>Findings</h4>
+            <p>Here is a list of the final iterations based on the findings from the last user testing, showcasing the improvements in the "Then vs Now" comparison:</p>
+            <div class="canva-photo user-flow"><img src="images/cs/aus iterations.png"></div>
+        
+        </div>
+
+
+ 
+    </div>
+</section>
+<!-- end of user user testing page -->
+
+<!-- start of user conclusion page -->
+<section class="grid-process lastcontent">
+    <div class="process-left" id="conclusion">
+        <div class="grid-title conclusion">
+        <h2>Conclusion</h2>
+        <div class="link-wrapper link-conclusion">
+            <p><a href="#user-research">User Research</a></p>
+            <p><a href="#ideation">Ideation</a></p>
+            <p><a href="#prototyping">Prototyping</a></p>
+            <p><a href="#testing">User Testing</a></p>
+            <p><a href="#conclusion">Conclusion</a></p>
+        </div></div>
+    </div>
+    <div class="process-right">
+
+        <div class="content">
+            <h4>Final Thoughts</h4>
+            <p>When I started this project, I identified three key reasons why a website redesign was necessary for Australia Post:
+            </p>
+           <ol>
+                <li><b>Information Overload and Duplication:</b> The current website has heaps of information, often leading to duplicate content.</li>
+                    <ul>
+                        <li>To address this, I conducted card sorting and sitemap exercises to identify the primary navigation buttons and streamline the information architecture.
+                        </li>
+                        <li>One observation I made during the redesign process was the presence of a tool button in the navigation, located next to the search bar. However, upon further examination, I noticed that most of the tools available in the button were already duplicated in the homepage and navigation sections. This redundancy was also observed in the footer of the website.</li>
+                    </ul>
+                <li><b>Misleading Labels:</b> I observed that certain navigation labels, such as "Send Within Australia," were misleading, as they didn't lead to the expected pages.  </li>
+                <ul>
+                    <li>To rectify this, I made changes to the structure of the Sending section, ensuring that commonly accessed features, like calculating and printing postage, were placed under a secondary navigation within the "Send Within Australia" page.</li>
+                    <li>The secondary navigation refers to the grey navigation bar located underneath the hero photo on the website. It serves as an additional navigation tool, providing access to specific sections or features that complement the primary navigation.</li>
+                </ul>
+                
+                <li><b>Focus on the Main Service:</b> It was crucial to emphasise Australia Post's primary service, which is Sending Items.
+                </li>
+                <ul>
+                    <li>The current website only featured four items in the secondary navigation, so I added four additional items to showcase commonly used services. These additions were derived from the tools buttons that users typically overlook, ensuring their visibility and accessibility.</li>
+                </ul>
+            </ol>
+
+            <p>As part of the project, I also created a comprehensive UI style guide to ensure consistency and cohesion in the design elements of the Australia Post website. To provide a detailed view of the style guide, I have made it accessible through Figma. You can access the full style guide <a href="">here.</a></p>
+            <div class="canva-photo user-flow"><img src="images/cs/aus style guide.png"></div>
+
+        </div>  
+        <br>
+        <div class="content">
+            <h4>Final Prototype</h4>
+            <p>Here’s a video of the final prototype. You can also check the figma file <a href="https://www.figma.com/proto/7BfrpHuRSXpnxb47BP3chH/UI-Design-System?type=design&node-id=433-9743&scaling=scale-down&page-id=433%3A9742&starting-point-node-id=433%3A9828">desktop</a> and <a href="https://www.figma.com/proto/7BfrpHuRSXpnxb47BP3chH/UI-Design-System?type=design&node-id=433-14056&scaling=scale-down&page-id=433%3A12366&starting-point-node-id=433%3A14210">mobile</a>  </p>
+            <div class="video-container">
+                <video src="videos/aus final desktop.mov" controls></video></div>
+            
+
+            <div class="video-container">
+                <video src="videos/aus final mobile.mov" controls></video></div>
+            </div>
+       <br>
+          
+    </div>
+</section>
+<!-- end of user user conclusion page -->
+
+
+<!-- Footer part -->
+<footer>
+    <div class="footer-text">
+    <h2>Let's collaborate and create something great!</h2></div>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/dodettebminoza/"><img src="images/linkedIn Icon.svg" alt="Linkedin"></a>
+        <a href="https://www.instagram.com/dodettebm/"><img src="images/ig icon.svg" alt="Instagram"></a>
+        <a href="mailto:dodetteminoza@yahoo.com"><img src="images/mail Icon.svg" alt="Email"></a>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/cs.js"></script>
+
+</body>
+
+
+
+
+</html>

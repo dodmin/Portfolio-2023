@@ -75,6 +75,16 @@ nav {
     gap: 2rem;
 }
 
+.navDM {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    margin-top: 60px;
+    gap: 2rem;
+}
+
 .logo-wrapper {
     width: 200px;
     min-width: 150px;
@@ -135,6 +145,17 @@ nav {
   border-radius: .8rem;
 }
 
+.main-nav a.nav-linkDM.active {
+    color: #F3A774;
+    background-color: #274782;
+    border-radius: .8rem;
+  }
+
+  .main-nav a.active {
+    color: #F3A774;
+    background-color: #274782;
+    border-radius: 0.8rem;
+  }
 
 /* .icon-nav {
     display: none;
@@ -158,12 +179,58 @@ nav {
     transform: translateY(-100%);
 }
 
+.dropdown-menuDM {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    transition: all 0.3s ease;
+    transform: translateY(-100%);
+}
+
 .dropdown-menu.active {
     display:block;
     transform: translateY(0);
   }
 
+  .dropdown-menuDM.active {
+    display:block;
+    transform: translateY(0);
+  }
 
+
+  footer {
+    display: block;
+}
+
+.footer-text h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    color: #274782;
+    text-align: center;
+    padding-bottom: 32px;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    column-gap: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+
+}
+
+.socials img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .socials img:hover {
+    transform: scale(1.1);
+  }
 
 
 
@@ -204,6 +271,9 @@ nav {
 
     }
 
+    .navDM {
+        margin-top: 24px;
+    }
 
     .main-nav{
         justify-content: end;
@@ -235,6 +305,38 @@ nav {
 @media screen and (max-width: 768px) {
 
     /* Navigation bar */
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin: 0 0;
+    }
+
+    nav.navDM {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin: 0;
+      }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8; 
+        z-index: 9999;
+      }
+
+      body {
+        margin-top: 200px;
+      }
+
 
     .main-nav {
         display: none;
@@ -296,6 +398,19 @@ nav {
         transform: scaleY(1);
         box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
     }
+
+    .dropdown-menuDM.active {
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        background-color: white;
+        padding: 0;
+        transform: scaleY(1);
+        box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+    }
     
       
     .dropdown-menu a {
@@ -310,6 +425,17 @@ nav {
         
     }
 
+    .dropdown-menuDM a {
+        display: block;
+        padding: 12px;
+        text-align: center;
+        font-family: futura;
+        color: #4a4a4a;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+        
+    }
  
 
 
@@ -340,7 +466,14 @@ nav {
         font-size: 1.25rem;
     }
 
+    .socials > a {
+        display: inline-flex;
+        justify-content: center;
+    }
 
+   a > img {
+        width: 50%;
+    }
 
 }
 
@@ -351,7 +484,28 @@ nav {
 @media screen and (max-width: 480px) {
 
 /* Navigation bar */
-    .logo-wrapper {
+   
+nav {
+    padding: 0 40px;
+    margin: 0 0;
+}
+
+nav.navDM {
+    padding: 0 40px;
+    margin: 0;
+  }
+
+
+  header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8; 
+    z-index: 9999;
+  }
+
+.logo-wrapper {
         width: 200px;
         overflow: hidden;
     }
@@ -389,4 +543,9 @@ nav {
         font-size: 1rem;
     }
 
+
+    .footer-text h2 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
 }

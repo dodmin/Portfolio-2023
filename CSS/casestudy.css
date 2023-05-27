@@ -660,11 +660,25 @@ video {
 
 
 .link-wrapper > p {
-    display: inline-flex;
-    flex-direction: row;
     padding: 0 2rem;
     line-height: 1.8rem;
     font-size: 1rem;
+
+    float: none;
+    height: 90%;
+    margin: 0 0.25%;
+    display: inline-block;
+    zoom: 1;
+}
+
+.link-wrapper {
+    margin-left: 1rem;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .process-right {
@@ -707,9 +721,18 @@ video {
     
     .hero-photo img {
         width: 20%;
+        min-width: 380px ;
+        padding: 1rem;
+    } 
+    
+    .hero-photoMobile img {
+        width: 20%;
         min-width: 145px;
         padding: 1rem;
     } 
+
+
+
 
     .bc-itemDM > a {
         line-height: 2rem;
@@ -764,16 +787,28 @@ video {
  }
 
  .link-wrapper > p {
-    display: inline-flex;
-    flex-direction: row;
+    /* display: inline-flex;
+    flex-direction: row; */
     padding: 0 1rem 0 0;
     line-height: 1.2rem;
     font-size: .875rem;
+/* 
+    float: none;
+    height: 90%;
+    margin: 0 0.25%;
+    display: inline-block;
+    zoom: 1; */
  }
 
  .link-wrapper {
     margin-left: 1rem;
-    width: fit-content;
+    /* width: fit-content; */
+    /* width: 100%;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; */
  }
 
  .grid-title {
